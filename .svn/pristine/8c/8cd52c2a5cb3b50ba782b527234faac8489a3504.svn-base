@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : menu.xml
+    Created on : 29 Ноябрь 2011 г., 22:39
+    Author     : Admin
+    Description:
+        Purpose of the document follows.
+-->
+
+<lang>
+    <RU>
+        <stepWhiteText>  --- Белые ходят --- </stepWhiteText>
+        <stepBlackText>  --- Черные ходят ---</stepBlackText>
+        <userHasFighterText>Вы имеете боевую шашку</userHasFighterText>
+        <userMustFightText>Вы должны бить</userMustFightText>
+        <wrongNextCellText>Выбрана не правильная целевая клетка </wrongNextCellText>
+        <frameTitle>Русские шашки</frameTitle>
+        <gameTitle>Игра</gameTitle>
+        <settingsTitle>Настройки</settingsTitle>
+        <gameActorsTitle>Кто играет</gameActorsTitle>
+        <compVSuserTitle>Компьютер(белыми) VS Игрок(черными)</compVSuserTitle>
+        <userVScompTitle>Игрок(белыми) VS Компьютер(черными)</userVScompTitle>
+        <userVSuserTitle>Игрок(белыми) VS Игрок(черными)</userVSuserTitle>
+        <compVScompTitle>Компьютер(белыми) VS Компьютер(черными)</compVScompTitle>
+        <languageTitle>Язык</languageTitle>
+        <helpTitle>Помощь</helpTitle>
+        <newGameTitle>Новая игра</newGameTitle>  
+        <exitTitle>Выход</exitTitle>
+        <rulesTitle>Правила</rulesTitle>
+        <rulesLink>http://ru.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5_%D1%88%D0%B0%D1%88%D0%BA%D0%B8</rulesLink>
+        <aboutTitle>О программе</aboutTitle>
+        <aboutDeveloperText>          Разработал Kapellan        
+  steel.lights.gardens@gmail.com
+        </aboutDeveloperText>
+        <labelBlackTitle>Черных шашек: </labelBlackTitle>
+        <labelWhiteTitle>Белых шашек: </labelWhiteTitle>
+        <noWhiteCheckersText>Все белые шашки уничтожены - черные победили !</noWhiteCheckersText>
+        <noBlackCheckersText>Все черные шашки уничтожены - белые победили !</noBlackCheckersText>
+        <blackIsBlockedText>Все черные шашки заблокировали - белые победили !</blackIsBlockedText>
+        <whiteIsBlockedText>Все белые шашки заблокировали - черные победили !</whiteIsBlockedText>
+        <whiteWon>Белые выиграли</whiteWon>
+        <blackWon>Черные выиграли</blackWon>
+        <dialogNewGame>Новая игра</dialogNewGame>
+        <dialogExit>Выход</dialogExit>
+    </RU>
+    <UA>
+        <stepWhiteText>  --- Білі ходять  --- </stepWhiteText>
+        <stepBlackText>  --- Чорні ходять ---</stepBlackText>
+        <userHasFighterText>Вы маєте бойову шашку</userHasFighterText>
+        <userMustFightText>Ви повинні бити</userMustFightText>
+        <wrongNextCellText>Ви обрали не вірну клітинку </wrongNextCellText>
+        <frameTitle>Російскі шашки</frameTitle>
+        <gameTitle>Гра</gameTitle>
+        <settingsTitle>Налаштування</settingsTitle>
+        <gameActorsTitle>Хто грає</gameActorsTitle>
+        <compVSuserTitle>Комп'ютер(білими) VS Гравець(чорними)</compVSuserTitle>
+        <userVScompTitle>Гравець(білими) VS Комп'ютер(чорними)</userVScompTitle>
+        <userVSuserTitle>Гравець(білыми) VS Гравець(чорними)</userVSuserTitle>        
+        <compVScompTitle>Комп'ютер(білими) VS Комп'ютер(чорними)</compVScompTitle>
+        <languageTitle>Мова</languageTitle>
+        <helpTitle>Допомога</helpTitle>
+        <newGameTitle>Нова гра</newGameTitle>  
+        <exitTitle>Вихід</exitTitle>
+        <rulesTitle>Правила</rulesTitle>
+        <rulesLink>http://ru.wikipedia.org/wiki/Русские_шашки</rulesLink>
+        <aboutTitle>Про програму</aboutTitle>
+        <aboutDeveloperText>          Розробив Kapellan       
+  steel.lights.gardens@gmail.com
+        </aboutDeveloperText>
+        <labelBlackTitle>Чорних шашок: </labelBlackTitle>
+        <labelWhiteTitle>Білих шашок: </labelWhiteTitle>
+        <noWhiteCheckersText>Всі білі шашки знищені - чорні перемогли !</noWhiteCheckersText>
+        <noBlackCheckersText>Всі чорні шашки знищені - білі перемогли !</noBlackCheckersText>
+        <blackIsBlockedText>Всі чорні шашки забклоковані - білі перемогли !</blackIsBlockedText>
+        <whiteIsBlockedText>Всі білі шашки забклоковані - білі перемогли !</whiteIsBlockedText>
+        <whiteWon>Білі виграли</whiteWon>
+        <blackWon>Чорні виграли</blackWon>
+        <dialogExit>Вихід</dialogExit>
+        <dialogNewGame>Нова гра</dialogNewGame>  
+    </UA>
+    <ENG>
+        <stepWhiteText>  --- White's turn --- </stepWhiteText>
+        <stepBlackText>  --- Black's turn ---</stepBlackText>
+        <userHasFighterText>You have a fighter </userHasFighterText>
+        <userMustFightText>You must fight</userMustFightText>
+        <wrongNextCellText>You chose wrong target cell </wrongNextCellText>
+        <frameTitle>Russian checkers</frameTitle>
+        <gameTitle>Game</gameTitle>
+        <settingsTitle>Settings</settingsTitle>
+        <gameActorsTitle>Who is playing</gameActorsTitle>
+        <compVSuserTitle>Computer(white) VS User(black)</compVSuserTitle>
+        <userVScompTitle>User(white) VS Computer(black)</userVScompTitle>
+        <userVSuserTitle>User(white) VS User(black)</userVSuserTitle>
+        <compVScompTitle>Computer(white) VS Computer(black)</compVScompTitle>
+        <languageTitle>Language</languageTitle>
+        <helpTitle>Help</helpTitle>
+        <newGameTitle>New game</newGameTitle>  
+        <exitTitle>Exit</exitTitle>
+        <rulesTitle>Rules</rulesTitle>
+        <rulesLink>http://en.wikipedia.org/wiki/Russian_checkers</rulesLink>
+        <aboutTitle>About</aboutTitle>
+        <aboutDeveloperText>         Developed by Kapellan       
+  steel.lights.gardens@gmail.com
+        </aboutDeveloperText>
+        <labelBlackTitle>Black's checkers: </labelBlackTitle>
+        <labelWhiteTitle>White's checkers: </labelWhiteTitle>
+        <noWhiteCheckersText>There are no white checkers left - black won !</noWhiteCheckersText>
+        <noBlackCheckersText>There are no black checkers left - white won !</noBlackCheckersText>
+        <blackIsBlockedText>All black checkers are blocked - white won !</blackIsBlockedText>
+        <whiteIsBlockedText>All white checkers are blocked - black won !</whiteIsBlockedText>
+        <whiteWon>White won</whiteWon>
+        <blackWon>Black won</blackWon>
+        <dialogExit>Exit</dialogExit>
+        <dialogNewGame>New game</dialogNewGame>  
+    </ENG>
+</lang>
