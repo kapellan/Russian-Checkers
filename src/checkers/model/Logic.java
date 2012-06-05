@@ -114,7 +114,7 @@ public class Logic {
                     if (isSome(this.data, activeCell, FIGHT)) {
                         activeCell.setActive();
                         steelFighterFlag = true;
-                        customResult();
+                        //customResult();
                     } else {
                         activeCell.resetActive();
                         steelFighterFlag = false;
@@ -195,7 +195,7 @@ public class Logic {
                     steelFighterFlag = true;
                     activeCell.setActive();
                     userResultCheckersNum += ":" + targetCell.index;
-                    customResult();
+                    //customResult();
                     return;
                 } else {
                     activeCell.resetActive();
