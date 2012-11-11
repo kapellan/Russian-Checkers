@@ -11,6 +11,7 @@ import static checkers.model.ChessBoardData.Lang;
 
 /**
  * This class paints chessboard
+ *
  * @author Kapellan
  */
 public class ChessBoardData {
@@ -248,7 +249,9 @@ public class ChessBoardData {
         whiteCheckers = userNum;
     }
 
-    /** This method make's alphabet-digital index of any cell */
+    /**
+     * This method make's alphabet-digital index of any cell
+     */
     private String makeIndex(int indexLiteralX, int indexDigitY) {
         return LITERALS[indexLiteralX] + (Integer.toString(REVERS_NUMBERS[indexDigitY]));
     }

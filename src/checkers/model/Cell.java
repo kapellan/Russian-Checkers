@@ -3,9 +3,9 @@ package checkers.model;
 import static checkers.model.ChessBoardData.Status.*;
 import checkers.model.ChessBoardData.Status;
 
-/** 
+/**
  * This class provides cell's properties
- * 
+ *
  * @author Kapellan
  */
 public class Cell {

@@ -15,9 +15,9 @@ import java.awt.event.KeyEvent;
 import java.awt.Desktop;
 import java.net.URI;
 
-/** 
+/**
  * This class provides user's actions on chess board
- * 
+ *
  * @author Kapellan
  */
 public class ActionChessBoard implements MouseListener, KeyListener, ActionListener, DataListener {
@@ -32,7 +32,9 @@ public class ActionChessBoard implements MouseListener, KeyListener, ActionListe
         this.mainW = mainW;
     }
 
-    /** User's click actions */
+    /**
+     * User's click actions
+     */
     public void mousePressed(MouseEvent e) {
         if ((!data.whiteIsHuman) && (!data.blackIsHuman)) {
             return;

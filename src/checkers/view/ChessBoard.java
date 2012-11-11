@@ -11,8 +11,9 @@ import java.awt.Font;
 import static checkers.model.ChessBoardData.Status.*;
 
 /**
- * This class draws chessboard by each cell's attributes - index, status, coordinates on X and Y
- *  
+ * This class draws chessboard by each cell's attributes - index, status,
+ * coordinates on X and Y
+ *
  * @author Kapellan
  */
 class ChessBoard extends JPanel {

@@ -7,9 +7,9 @@ import static checkers.model.Logic.Action.*;
 import static checkers.model.Logic.Player.*;
 import static checkers.model.Logic.Direction.*;
 
-/** 
- * This class provides game logic - move and fight. 
- * 
+/**
+ * This class provides game logic - move and fight.
+ *
  * @author Kapellan
  */
 public class Logic {
@@ -345,7 +345,6 @@ public class Logic {
             System.out.println("variant: " + variants.get(v).index);
             for (int t = 0; t < targets[v].length; t++) {
                 System.out.println("  target: " + targets[v][t].index);
-
                 if (willBeLessUnderAttack(variants.get(v), targets[v][t])) {
                     points[v][t] += 4;
                     System.out.println("   willBeLessUnderAttack");
@@ -362,18 +361,18 @@ public class Logic {
                     if (act.isFight() && willBeFighterAfter(variants.get(v), targets[v][t])) {
                         points[v][t] += 1;
                         System.out.println("   willBeFighterAfter AND FIGHT");
-                        commonCheckPoints(variants.get(v), targets[v][t], t, maxIndex, minIndex);
+                        points[v][t] += commonCheckPoints(variants.get(v), targets[v][t], maxIndex, minIndex);
                     }
                 } else {
                     if (willBeFighterAfter(variants.get(v), targets[v][t])) {
                         points[v][t] += 3;
                         System.out.println("   willBeFighterAfter");
-                        commonCheckPoints(variants.get(v), targets[v][t], t, maxIndex, minIndex);
+                        points[v][t] += commonCheckPoints(variants.get(v), targets[v][t], maxIndex, minIndex);
 
                     } else {
                         points[v][t] += 1;
                         System.out.println("   NOT willBeFighterAfter");
-                        commonCheckPoints(variants.get(v), targets[v][t], t, maxIndex, minIndex);
+                        points[v][t] += commonCheckPoints(variants.get(v), targets[v][t], maxIndex, minIndex);
                     }
                 }
                 System.out.println("   POINTS: " + points[v][t]);
@@ -420,23 +419,26 @@ public class Logic {
         }
     }
 
-    void commonCheckPoints(Cell variant, Cell target, int points, int maxIndex, int minIndex) {
+    private int commonCheckPoints(Cell variant, Cell target, int maxIndex, int minIndex) {
+        int pointSummary = 0;
         if (isQueenIndex(target)) {
-            points += 2;
+            pointSummary += 2;
             System.out.println("   isQueenIndex");
         }
         if (isCentralField(target)) {
-            points += 1;
+            pointSummary += 1;
             System.out.println("   isCentralField");
         }
         if (variant.isWhiteChecker() && Integer.parseInt(target.index.substring(1)) == minIndex) {
-            points += 1;
+            pointSummary += 1;
             System.out.println("min index: " + target.index + " " + minIndex);
         }
         if (variant.isBlackChecker() && Integer.parseInt(target.index.substring(1)) == maxIndex) {
-            points += 1;
+            pointSummary += 1;
             System.out.println("max index: " + target.index + " " + maxIndex);
         }
+        System.out.println("   Points in common step: " + pointSummary);
+        return pointSummary;
     }
 
     private boolean willBeFighterAfter(Cell activeCell, Cell targetCell) throws NoSuchDirectionException {
@@ -749,7 +751,10 @@ public class Logic {
         throw new NoSuchDirectionException();
     }
 
-    /** Search cell in array of cells. If cell with such coordinates exists, return it. If not - create new cell and set it's status like "NILL" */
+    /**
+     * Search cell in array of cells. If cell with such coordinates exists,
+     * return it. If not - create new cell and set it's status like "NILL"
+     */
     Cell getCellByXY(ChessBoardData xData, int clickedX, int clickedY) {
         for (Cell cell : xData.cells) {
             if ((clickedX >= (cell.cX))
@@ -762,7 +767,10 @@ public class Logic {
         return new Cell();
     }
 
-    /** Search cell in array of cells. If cell with such coordinates exists, return it. If not - create new cell and set it's status like "NILL" */
+    /**
+     * Search cell in array of cells. If cell with such coordinates exists,
+     * return it. If not - create new cell and set it's status like "NILL"
+     */
     public Cell getCellByXY(int clickedX, int clickedY) {
         for (Cell cell : data.cells) {
             if ((clickedX >= (cell.cX))
@@ -873,15 +881,15 @@ public class Logic {
         this.data = new ChessBoardData();
         (new Thread(new ObservePlayerQueue(this))).start();
         /*
-        for (int i = 0; i < data.cells.length; i++) {
-        if (data.cells[i].isChecker() || data.cells[i].isQueen()) {
-        data.cells[i].setBlackCell();
-        }
-        }
-        getCellByIndex("f2").setBlackChecker();
-        //getCellByIndex("e1").setBlackQueen();
+         for (int i = 0; i < data.cells.length; i++) {
+         if (data.cells[i].isChecker() || data.cells[i].isQueen()) {
+         data.cells[i].setBlackCell();
+         }
+         }
+         getCellByIndex("f2").setBlackChecker();
+         //getCellByIndex("e1").setBlackQueen();
         
-        getCellByIndex("g1").setWhiteChecker();
+         getCellByIndex("g1").setWhiteChecker();
          */
     }
 }

@@ -5,13 +5,13 @@ import checkers.model.ChessBoardData;
 import checkers.model.Logic;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import javax.swing.*;
 
 /**
  * This class provides GUI
- * 
+ *
  * @author Kapellan
  */
 public class MainWindow {
