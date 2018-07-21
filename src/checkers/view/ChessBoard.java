@@ -2,13 +2,9 @@ package checkers.view;
 
 import checkers.model.Cell;
 import checkers.model.ChessBoardData;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import javax.swing.JPanel;
-import java.awt.RenderingHints;
-import java.awt.Font;
-import static checkers.model.ChessBoardData.Status.*;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * This class draws chessboard by each cell's attributes - index, status,

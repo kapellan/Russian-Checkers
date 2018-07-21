@@ -1,11 +1,12 @@
 package checkers.model;
 
+import java.awt.*;
 import java.util.ArrayList;
-import java.awt.HeadlessException;
 import java.util.Random;
+
 import static checkers.model.Logic.Action.*;
-import static checkers.model.Logic.Player.*;
 import static checkers.model.Logic.Direction.*;
+import static checkers.model.Logic.Player.*;
 
 /**
  * This class provides game logic - move and fight.
@@ -573,7 +574,7 @@ public class Logic {
         return false;
     }
 
-//   |*| |*|   |x| |x| Проверяем по диагоналям под атакой ли любая шашка(клетка) НА ДАННЫЙ МОМЕНТ.
+    //   |*| |*|   |x| |x| Проверяем по диагоналям под атакой ли любая шашка(клетка) НА ДАННЫЙ МОМЕНТ.
 //   | |o| |   | |o| |
 //   |x| |x|   |*| |*|  
     private boolean isCellUnderAtack(ChessBoardData xData, Cell cell, Player player) throws NoSuchDirectionException {
@@ -660,7 +661,7 @@ public class Logic {
         return new Cell();
     }
 
-//  return:
+    //  return:
 //  move    - [targetCell, new Cell()]
 //  fight   - [targetCell, victimCell]
 //  nothing - [new Cell(), new Cell()]

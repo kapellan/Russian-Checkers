@@ -1,18 +1,10 @@
 package checkers.controller;
 
-import checkers.model.Cell;
-import checkers.model.ChessBoardData;
-import checkers.model.DataListener;
-import checkers.model.Logic;
-import checkers.model.UpdateGuiEvent;
+import checkers.model.*;
 import checkers.view.MainWindow;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.KeyListener;
-import java.awt.event.KeyEvent;
-import java.awt.Desktop;
+
+import java.awt.*;
+import java.awt.event.*;
 import java.net.URI;
 
 /**

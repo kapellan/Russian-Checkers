@@ -1,13 +1,15 @@
 package checkers.model;
 
-import checkers.model.ChessBoardData.GameActors;
-import java.awt.Dimension;
-import static checkers.model.ChessBoardData.Status.*;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import org.w3c.dom.*;
+import java.awt.*;
+
 import static checkers.model.ChessBoardData.GameActors.*;
-import static checkers.model.ChessBoardData.Lang;
+import static checkers.model.ChessBoardData.Status.*;
 
 /**
  * This class paints chessboard

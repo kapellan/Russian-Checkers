@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Russian-Checkers:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Russian_Checkers_jar</output-path>
+    <root id="archive" name="Russian-Checkers.jar">
+      <element id="module-output" name="Russian-Checkers" />
+    </root>
+  </artifact>
+</component>
