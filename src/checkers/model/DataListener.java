@@ -7,7 +7,6 @@ package checkers.model;
 import java.util.EventListener;
 
 /**
- *
  * @author Kapellan
  */
 public interface DataListener extends EventListener {

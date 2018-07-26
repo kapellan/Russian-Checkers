@@ -4,9 +4,11 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-import static checkers.model.Logic.Action.*;
+import static checkers.model.Logic.Action.FIGHT;
+import static checkers.model.Logic.Action.MOVE;
 import static checkers.model.Logic.Direction.*;
-import static checkers.model.Logic.Player.*;
+import static checkers.model.Logic.Player.BLACK;
+import static checkers.model.Logic.Player.WHITE;
 
 /**
  * This class provides game logic - move and fight.

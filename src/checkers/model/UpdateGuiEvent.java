@@ -7,7 +7,6 @@ package checkers.model;
 import java.util.EventObject;
 
 /**
- *
  * @author Kapellan
  */
 public class UpdateGuiEvent extends EventObject {

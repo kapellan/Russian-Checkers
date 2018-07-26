@@ -3,11 +3,9 @@ package checkers.view;
 import checkers.controller.ActionChessBoard;
 import checkers.model.ChessBoardData;
 import checkers.model.Logic;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.Font;
+
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * This class provides GUI
